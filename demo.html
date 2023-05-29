@@ -22,7 +22,7 @@
         #header {
             font-size: 45px;
             font-weight: 400;
-            font-family:sans-serif;
+            font-family: sans-serif;
             color: white;
             text-align: center;
             /* border: 1px solid green; */
@@ -64,17 +64,20 @@
             padding-bottom: 5px;
         }
 
+        .href {
+            font-weight: normal;
+        }
+
         a {
-            text-decoration:none;
+            text-decoration: none;
             color: #1466a8;
             /* border: 1px solid blue; */
         }
 
         li {
             /* border: 1px solid red; */
-            
+
         }
-        
     </style>
 
 <body>
@@ -91,10 +94,15 @@
             <div class="title">為了成為軟體工程師，曾做過什麼努力？若有具體專案作品請分享給我們。</div>
             <div class="content">2023年4月開始利用下班及假日在youtube上將彭彭老師的教學影片都看了一遍，並且跟著實作
                 <ul>
-                    <li><a href="https://youtube.com/playlist?list=PL-g0fdC5RMbqW54tWQPIVbhyl_Ky6a2VI"
-                            target="_blank">HTML、CSS、JavaScript 網頁前端工程</a></li>
-                    <li><a href="https://youtube.com/playlist?list=PL-g0fdC5RMbpqZ0bmvJTgVTS4tS3txRVp"
-                            target="_blank">JavaScript 網頁前端工程入門教學</a></li>
+                    <li><a class="href" href="https://youtube.com/playlist?list=PL-g0fdC5RMbqW54tWQPIVbhyl_Ky6a2VI"
+                            target="_blank" onmouseover="over(this);" onmouseout="out(this);" onmousedown="down(this);"
+                            onmouseup="up(this);">HTML、CSS、JavaScript 網頁前端工程</a></li>
+                    <li><a class="href" href="https://youtube.com/playlist?list=PL-g0fdC5RMbpqZ0bmvJTgVTS4tS3txRVp"
+                            target="_blank" onmouseover="over(this);" onmouseout="out(this);" onmousedown="down(this);"
+                            onmouseup="up(this);">JavaScript 網頁前端工程入門教學</a></li>
+                    <li><a class="href" href="https://youtube.com/playlist?list=PL-g0fdC5RMbpz9X__H5ycq1XcXxhfb5rk"
+                            target="_blank" onmouseover="over(this);" onmouseout="out(this);" onmousedown="down(this);"
+                            onmouseup="up(this);">JavaScript 網頁前端工程進階教學</a></li>
                 </ul>
                 2023年5月開始待業狀態下每天讓自己像上班族一樣固定時間，在Udacity學習平台上學習JavaScript並跟著練習，不懂的就先在google上找資料，再不懂的話就會尋求在軟體業界工作的朋友
             </div>
@@ -123,15 +131,28 @@
         <hr>
         <div class="box">
             <div class="title">關於這份申請網頁，請分享一個你開發時的技術心得。</div>
-            <div class="content">內容</div>
+            <div class="content">在開發此網頁時，由於對標籤及屬性元素等還未熟悉，在缺少設計開發的靈感時，參考了很多網站的設計，運用開發者模式一個個查詢不同的標籤是什麼樣的功能?會帶來什麼樣的效果?這麼做不只認識了很多的標籤功能同時也加深了印象。</div>
         </div>
         <hr>
         <div class="box">
             <div class="title">其他想要對我們說的事情？</div>
-            <div class="content">內容</div>
+            <div class="content">從友人方面得知WeHelp，也看了前面幾屆前輩們的成果發表，以及彭彭老師的招生說明，讓我在轉職上有了方向，很希望能參加WeHelp培訓。</div>
         </div>
     </main>
+    <script>
+        function over(elem) {
+            elem.style.color = "black";
+        }
+        function out(elem) {
+            elem.style.color = "#1466a8";
+        }
+        function down(elem) {
+            elem.style.fontWeight = "bold";
+        }
+        function up(elem) {
+            elem.style.fontWeight = "normal";
+        }
+    </script>
 </body>
-</head>
 
 </html>
